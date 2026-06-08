@@ -398,6 +398,227 @@ An affordance that cannot be reached is effectively lost.
 
 ---
 
+# Part IV-A: Nested Viability and Recursive Constraint Satisfaction
+
+## 19A. Sustaining Regions and Survival Regions
+
+A viability region is not necessarily homogeneous.
+
+Many abstractions possess both:
+
+```text
+Q_i
+```
+
+a sustaining region,
+
+and
+
+```text
+U_i
+```
+
+a survival region,
+
+where
+
+```text
+Q_i ⊂ U_i
+```
+
+The sustaining region contains states that actively replenish or maintain viability.
+
+The survival region contains states in which viability may persist temporarily while reserves are consumed.
+
+Examples:
+
+Fish:
+
+```text
+water
+→ sustaining region
+```
+
+```text
+wet shoreline
+→ survival region
+```
+
+Human:
+
+```text
+Earth surface environment
+→ sustaining region
+```
+
+```text
+high altitude vacuum exposure
+→ survival region
+```
+
+An abstraction may remain viable outside its sustaining region for limited duration.
+
+Persistence therefore depends not only upon location within a viability region but also upon available reserves.
+
+---
+
+## 19B. Viability Consumption
+
+Outside sustaining regions viability may decrease over time.
+
+Formally:
+
+```text
+dV_i/dt < 0
+```
+
+even while
+
+```text
+V_i > 0
+```
+
+The abstraction remains viable but is consuming viability reserve.
+
+Examples:
+
+* fish stranded on land
+* astronaut without life support
+* company operating at a loss
+* civilization consuming strategic reserves
+
+Temporary persistence is therefore possible despite movement outside sustaining conditions.
+
+---
+
+## 19C. Viability Replenishment
+
+Within sustaining regions maintenance processes may restore viability.
+
+Formally:
+
+```text
+dV_i/dt > 0
+```
+
+when maintenance exceeds degradation.
+
+Examples:
+
+* feeding
+* repair
+* healing
+* infrastructure investment
+* institutional reform
+
+Sustaining regions permit viability replenishment.
+
+Survival regions permit only viability expenditure.
+
+---
+
+## 19D. Viability Reserve Dynamics
+
+Persistence depends on both viability and available reserve.
+
+Let:
+
+```text
+B_i
+=
+V_i - T_i
+```
+
+represent viability reserve.
+
+Temporary excursions outside sustaining regions are possible provided reserve remains positive.
+
+Collapse occurs when reserve is exhausted.
+
+This explains why organisms, institutions, and civilizations may survive temporarily under adverse conditions.
+
+---
+
+# Part IV-B: Constraint Geometry
+
+## 19E. Constraint Sets
+
+Every abstraction depends upon multiple simultaneous constraints.
+
+Let:
+
+```text
+K_1,
+K_2,
+...
+K_n
+```
+
+represent required constraint regions.
+
+Examples for a fish:
+
+```text
+oxygen
+temperature
+food access
+osmotic regulation
+predator avoidance
+```
+
+Each constraint generates an admissible region.
+
+---
+
+## 19F. Composite Viability Region
+
+The viability region of an abstraction is the intersection of all required constraint regions.
+
+Formally:
+
+```text
+P_i
+=
+⋂ K_j
+```
+
+An abstraction remains viable only when all required constraints are simultaneously satisfied.
+
+Failure of any essential constraint may destroy viability.
+
+---
+
+## 19G. Constraint Bottlenecks
+
+The smallest constraint region frequently determines overall viability.
+
+Examples:
+
+* oxygen limitation
+* memory limitation
+* energy limitation
+* bandwidth limitation
+
+Constraint bottlenecks often dominate organizational dynamics.
+
+---
+
+## 19H. Constraint Expansion
+
+Support structures may expand constraint regions.
+
+Examples:
+
+* gills expand oxygen access
+* lungs expand habitat access
+* refrigeration expands food viability
+* writing expands memory persistence
+* computation expands information processing
+
+Support structures therefore enlarge viability regions by relaxing constraints.
+
+---
+
 # Part V: Support Geometry
 
 ## 20. Dependency Network
@@ -540,6 +761,143 @@ retained organization
 ```
 
 Accumulation is recursively self-supporting.
+
+---
+
+# Part VII-A: Recursive Composition
+
+## 31A. Composition as Constraint Satisfaction
+
+Composition requires simultaneous viability of participating abstractions.
+
+Suppose:
+
+```text
+A
+```
+
+and
+
+```text
+B
+```
+
+compose to form
+
+```text
+C
+```
+
+The viability region of
+
+```text
+C
+```
+
+requires:
+
+* viability of A
+* viability of B
+* compatibility of interfaces
+* satisfaction of composition constraints
+
+---
+
+## 31B. Emergent Viability Regions
+
+Composition generates new viability regions.
+
+Formally:
+
+```text
+P_C
+⊂
+P_A
+∩
+P_B
+```
+
+plus additional compatibility constraints.
+
+The composed abstraction generally possesses a smaller admissible region than either constituent abstraction individually.
+
+Composition therefore increases both capability and fragility.
+
+---
+
+## 31C. Interface Constraints
+
+Interfaces create additional viability requirements.
+
+Examples:
+
+* communication protocols
+* biological compatibility
+* legal agreements
+* software APIs
+* social norms
+
+Composition succeeds only when interface constraints remain satisfied.
+
+---
+
+## 31D. Hierarchical Viability
+
+Higher-order abstractions depend upon viability of lower-order abstractions.
+
+Examples:
+
+```text
+cell
+→ organism
+
+organism
+→ group
+
+group
+→ institution
+
+institution
+→ civilization
+```
+
+Each layer creates new viability regions while depending upon lower layers.
+
+---
+
+## 31E. Viability Cascades
+
+Failure may propagate through dependency layers.
+
+Formally:
+
+```text
+failure
+→ support loss
+→ viability reduction
+→ additional failures
+```
+
+Examples:
+
+* ecosystem collapse
+* infrastructure failure
+* financial contagion
+* software dependency failure
+
+Viability therefore propagates both upward and downward through support networks.
+
+---
+
+## 31F. Recursive Constraint Satisfaction Principle
+
+All persistent abstractions are maintained through recursive constraint satisfaction.
+
+Lower-level abstractions satisfy constraints generating viability regions for higher-level abstractions.
+
+Higher-level abstractions emerge only when sufficient lower-level viability persists.
+
+Complexity therefore consists of nested layers of simultaneously satisfied constraints.
 
 ---
 
@@ -761,18 +1119,74 @@ across all required supporting layers.
 
 ---
 
+# Part XI-A: Additional Structural Principles
+
+## Principle 10: Sustaining Region Principle
+
+Viability regions contain sustaining regions and survival regions.
+
+Sustaining regions replenish viability.
+
+Survival regions consume viability reserve.
+
+---
+
+## Principle 11: Constraint Intersection Principle
+
+The viability region of an abstraction is the intersection of all required constraint regions.
+
+Persistence requires simultaneous satisfaction of all essential constraints.
+
+---
+
+## Principle 12: Constraint Expansion Principle
+
+Support structures increase viability by expanding admissible constraint regions.
+
+---
+
+## Principle 13: Composition Principle
+
+Composition creates new abstractions by imposing additional constraints upon viable abstractions.
+
+Capability increases through composition.
+
+Constraint burden increases simultaneously.
+
+---
+
+## Principle 14: Recursive Constraint Principle
+
+All higher-order abstractions arise from recursively nested constraint satisfaction.
+
+Persistent complexity is therefore hierarchical viability.
+
+---
+
+## Principle 15: Viability Cascade Principle
+
+Failures propagate through dependency networks by shrinking viability regions of dependent abstractions.
+
+Resilience requires preventing cascade propagation.
+
+---
+
 # General Dynamic Principle
 
-Support structures generate viability regions.
+Support structures generate and expand constraint regions.
 
-Organizational states move through those regions as trajectories.
+Constraint intersections generate viability regions.
 
-Viability measures distance from organizational failure.
+Organizational trajectories move through those regions.
 
-Affordances are viable future trajectories.
+Some regions replenish viability.
 
-Maintenance preserves trajectories within viability regions.
+Other regions merely consume viability reserve.
 
-Accumulation occurs when viability-preserving trajectories, support structures, and future possibility regions are retained, reused, composed, and expanded faster than they are destroyed.
+Affordances correspond to viable future trajectories reachable through constraint-satisfying motion.
 
-Open-ended accumulation requires continual expansion of viable future possibility space while maintaining bounded support burden across all interdependent layers.
+Composition generates higher-order abstractions through additional constraint satisfaction.
+
+Persistent complexity emerges from recursively nested layers of viable trajectories whose supporting constraints remain simultaneously satisfied.
+
+Open-ended accumulation requires continual expansion of viable future possibility space while maintaining the viability of all supporting layers upon which future possibilities depend.
